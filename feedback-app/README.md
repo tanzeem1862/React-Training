@@ -1,26 +1,22 @@
-# Timed Quiz Game
+# Feedback Collection App
 
-This is the solution for Question 1 of the React Training Assessment.
+This is the solution for Question 2 of the React Training Assessment.
 
 ## 🚀 Demo Video
 
-👉 [Demo Video for Quiz App](https://drive.google.com/file/d/171mdRz43dgSxp07Sbv26GUnubn0stVki/view?usp=sharing)
+👉 [Demo Video for Feedback App](https://drive.google.com/file/d/1XOMdG6r6mtaIdXY79u5dKyT5369cBKpj/view?usp=sharing)
 
 ## Setup Steps
 
-1.  **Ensure Mock API is running:**
+1.  Navigate to the project directory:
     ```bash
-    json-server --watch db.json --port 4000
+    cd feedback-app
     ```
-2.  Navigate to the project directory:
-    ```bash
-    cd quiz-app
-    ```
-3.  Install dependencies:
+2.  Install dependencies:
     ```bash
     npm install
     ```
-4.  Run the application:
+3.  Run the application:
     ```bash
     npm run dev
     ```
