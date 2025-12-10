@@ -1,0 +1,86 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "question": "Which React hook is used for managing state in a function component?",
+      "options": [
+        "useEffect",
+        "useState",
+        "useMemo",
+        "useRef"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "2",
+      "question": "Which hook would you use to perform side effects like data fetching?",
+      "options": [
+        "useState",
+        "useEffect",
+        "useMemo",
+        "useContext"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "3",
+      "question": "Which hook can be used to memoize expensive calculations?",
+      "options": [
+        "useState",
+        "useEffect",
+        "useMemo",
+        "useReducer"
+      ],
+      "correctIndex": 2
+    }
+  ],
+  "results": [
+    {
+      "id": "eda7",
+      "name": "Quiz Taker",
+      "score": 3,
+      "total": 3,
+      "timestamp": "2025-12-10T13:43:43.678Z"
+    },
+    {
+      "id": "e9dc",
+      "name": "Quiz Taker",
+      "score": 1,
+      "total": 3,
+      "timestamp": "2025-12-10T13:44:51.905Z"
+    },
+    {
+      "id": "e7ef",
+      "name": "Quiz Taker",
+      "score": 2,
+      "total": 3,
+      "timestamp": "2025-12-10T13:53:13.416Z"
+    }
+  ],
+  "feedback": [
+    {
+      "id": "ce6f",
+      "name": "Tanzeem",
+      "email": "tanzeem@gmail.com",
+      "rating": "4",
+      "comments": "Good project.",
+      "timestamp": "2025-12-10T14:04:13.008Z"
+    },
+    {
+      "id": "b813",
+      "name": "Anil",
+      "email": "anil@gmail.com",
+      "rating": "3",
+      "comments": "Great project.",
+      "timestamp": "2025-12-10T14:04:47.635Z"
+    },
+    {
+      "id": "8c4f",
+      "name": "Sravan",
+      "email": "sravan@gmail.com",
+      "rating": "2",
+      "comments": "Not good project",
+      "timestamp": "2025-12-10T14:18:04.457Z"
+    }
+  ]
+}
