@@ -1,16 +1,37 @@
-# React + Vite
+# Timed Quiz Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the solution for Question 1 of the React Training Assessment.
 
-Currently, two official plugins are available:
+## 🚀 Demo Video
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [Demo Video for Quiz App](https://drive.google.com/file/d/171mdRz43dgSxp07Sbv26GUnubn0stVki/view?usp=sharing)
 
-## React Compiler
+## Setup Steps
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1.  **Ensure Mock API is running:**
+    ```bash
+    json-server --watch db.json --port 4000
+    ```
+2.  Navigate to the project directory:
+    ```bash
+    cd quiz-app
+    ```
+3.  Install dependencies:
+    ```bash
+    npm install
+    ```
+4.  Run the application:
+    ```bash
+    npm run dev
+    ```
 
-## Expanding the ESLint configuration
+## React Concept Implementation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Concept | Location | Usage |
+| :--- | :--- | :--- |
+| `useState` | `useQuiz.ts` | Used for managing `questions` data, `score`, `currentQuestionIndex`, `timer`, and `quizStatus`. |
+| `useEffect` | `useQuiz.ts` | **1.** Data fetching (`fetchQuestions` function called on start/restart). **2.** Timer logic with **cleanup** to prevent memory leaks (`clearInterval`). **3.** POSTing final results when `quizStatus` becomes 'finished'. |
+| Custom Hook | `useQuiz.ts` | Encapsulates all quiz state management, data fetching, timer logic, and navigation functions. |
+| Data Fetching | `useQuiz.ts` | Uses the native `fetch` API to GET questions and POST results. |
+| Loading/Error | `useQuiz.ts`, `App.tsx` | `quizStatus` and `error` state variables handle the UI display for loading and error messages. |
+| `useMemo` | `useQuiz.ts` | Used to compute the `scoreSummary` (including percentage) only when the `score` or `questions.length` changes. |
